@@ -29,9 +29,10 @@ def message(original_path,key):
 
    subject = 'Image Upload Notification'
    topic_arn = ""  
+    #provide the access key and secret key
    sns_resource= boto3.client("sns",
-      aws_access_key_id= 'AKIARTSJQ4OOKOIRFZXL' ,
-      aws_secret_access_key= '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',
+      aws_access_key_id= '##Access_key' ,
+      aws_secret_access_key= '##Secret_key',
       region_name = 'us-east-1')
    
    
